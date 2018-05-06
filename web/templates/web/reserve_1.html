@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %} <!DOCTYPE html>
 <html>
 
   <head>
@@ -8,8 +8,8 @@
     <title>HomeFresh</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap-datetimepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/main.css' %}">
   </head>
 
   <body>
@@ -113,8 +113,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/moment-with-locales.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="{% static 'web/js/moment-with-locales.min.js' %}"></script>
+    <script src="{% static 'web/js/bootstrap-datetimepicker.min.js' %}"></script>
     <script type="text/javascript">
       $(function () {
         $('#datetimepicker1').datetimepicker({
