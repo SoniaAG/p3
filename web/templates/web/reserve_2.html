@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeFresh</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">HomeFresh</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ES <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">ES</a></li>
+                <li><a href="#">CAT</a></li>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">DE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-10 col-lg-offset-1 section">
+          <h2>Reserva tu servicio HomeFresh</h2>
+          <p>Indica los servicios que solicitas y la duración.</p>
+          <form class="form-horizontal">
+            <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <label class="col-sm-6 control-label">Cocinas</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0" min="0" name="item">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-6 control-label">Dormitorios</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0" min="0" name="item">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-6 control-label">Baños</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0" min="0" name="item">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <label class="col-sm-6 control-label">Salones</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0" min="0" name="item">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-6 control-label">Balcones</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0" min="0" name="item">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-6 control-label">Terrazas</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" value="0" min="0" name="item">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Limpieza en los interiores de muebles
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Limpieza de ventanas
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Necesidad de productos y utensilios
+                </label>
+              </div>
+            </div>
+            <div class="col-xs-12 horas">
+              <div class="col-xs-4">
+                <select class="form-control">
+                  <option>---</option>
+                  <option>0.5 Horas</option>
+                  <option>1 Hora</option>
+                  <option>1.5 Horas</option>
+                  <option>2 Horas</option>
+                  <option>2.5 Horas</option>
+                  <option>3 Horas</option>
+                  <option>3.5 Horas</option>
+                  <option>4 Horas</option>
+                  <option>4.5 Horas</option>
+                  <option>5 Horas</option>
+                  <option>5.5 Horas</option>
+                  <option>6 Horas</option>
+                </select>
+              </div>
+              <div class="col-xs-8">
+                <span>HORAS A CONTRATAR</span> <br>
+                <span id="recommendation" class="hidden">Le recomendamos que solicite <span>2</span> horas</span>
+              </div>
+            </div>
+          </form>
+          <div class="col-xs-12 clearfix">
+          <a href="reserve_3.html" class="btn btn-warning">Siguiente ></a>
+          <span>Paso 2 de 5</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="clearfix">
+      <div class="col-xs-12 col-sm-6">
+        <a href="#">Preguntas frecuentes</a> <span>|</span>
+        <a href="#">Contacta con nosotros</a> <span>|</span>
+        <a href="#">Blog</a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a href="#">Síguenos en redes sociales</a>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('[name="item"]').change(function(){
+              var items = 0;
+              $.each($('[name="item"]'), function(index, item){
+                  items += parseInt(item.value);
+              });
+              if(items){
+                  var hours = items / 2;
+                  $('#recommendation span').html(hours);
+                  $('#recommendation').removeClass('hidden');
+              } else {
+                  $('#recommendation').addClass('hidden');
+              }
+          })
+      });
+    </script>
+
+  </body>
+
+</html>
