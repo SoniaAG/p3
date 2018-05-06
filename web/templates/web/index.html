@@ -22,13 +22,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">HomeFresh</a>
+          <a class="navbar-brand" href="{% url 'index' %}">HomeFresh</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.html">Iniciar Sesión</a></li>
-            <li><a href="signup_1.html">Registrarse</a></li>
-            <li><a href="reserve_0.html">Reserva Ahora</a></li>
+            <li><a href="{% url 'login' %}">Iniciar Sesión</a></li>
+            <li><a href="{% url 'signup1' %}">Registrarse</a></li>
+            <li><a href="{% url 'reserve0' %}">Reserva Ahora</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ES <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -53,7 +53,7 @@
           <div>
             <h1>HomeFresh</h1>
             <h2>Disfruta mientras nosotros<br>nos encargamos de la limpieza</h2>
-            <a href="reserve_0.html" class="btn btn-warning btn-lg btn-block">RESERVAR</a>
+            <a href="{% url 'reserve0' %}" class="btn btn-warning btn-lg btn-block">RESERVAR</a>
           </div>
         </div>
       </div>
